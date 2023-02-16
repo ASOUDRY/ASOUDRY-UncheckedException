@@ -14,6 +14,10 @@ public class Lab {
      * event happens, like running out of computer memory.
      */
     public void throwUncheckedException(){
-
+        int[] numbers = {1, 2, 3, 4, 5};
+        int index = 6;
+        if (index < 0 || index >= numbers.length) {
+            throw new ArrayIndexOutOfBoundsException("Your Index is out of bounds: " + index);
+        }
     }
 }
